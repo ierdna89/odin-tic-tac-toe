@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
+:root {
+    --primary-light: #f3fafc;
+    --primary-dark: #13809b;
+    --secondary-light: #c6f0fc;
+    --secondary-dark: #15a0c2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+body > header > h1 {
+    color: var(--primary-dark);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-light);
+    gap: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    opacity: 50%;
+    margin-bottom: 10px;
+}
+
+.fa-github {
+    color: var(--primary-dark);
+    font-size: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.3);
+}
